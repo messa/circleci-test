@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    steps:
+    - run: date
+    - run: export
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+    - build
